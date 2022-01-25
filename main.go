@@ -19,5 +19,5 @@ func main() {
 			break
 		}
 	}
-	src.BalanceList(addresses, privateKeys)
+	src.Run(addresses, privateKeys)
 }

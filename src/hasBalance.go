@@ -78,7 +78,7 @@ func chunkSlice(slice []string, chunkSize int) [][]string {
 	return chunks
 }
 
-func BalanceList(addressList []string, pkList []string) {
+func Run(addressList []string, pkList []string) {
 	list := chunkSlice(addressList, 20)
 	for _, lst := range list {
 		resp, err := http.Get(
